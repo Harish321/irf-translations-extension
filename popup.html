@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html ng-app="translation">
+
+<head>
+    <title>Irf Translations</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-data-table/release/dataTable.js"></script>
+    <!-- <link rel="stylesheet" href="./icon.css"> -->
+    <link rel="stylesheet" href="bower_components/angular-data-table/release/material.css">
+    <link rel="stylesheet" href="bower_components/angular-data-table/release/dataTable.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./app/app.js"></script>
+    <style>
+        html {
+            overflow: scroll;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+            /* Remove scrollbar space */
+            background: transparent;
+            /* Optional: just make scrollbar invisible */
+        }
+
+        /* Optional: show position indicator in red */
+        /* ::-webkit-scrollbar-thumb {
+            background: #FF0000;
+        } */
+        .bulkTransTextarea{
+            width: 99%;
+            height: 90px;
+        }
+        body {
+            width: 700px;
+            /* max-height: 10px !important; */
+            /* overflow: scroll; */
+            height: 500px;
+            overflow: auto;
+            overflow-y: auto;
+            overflow-x: auto;
+        }
+
+        .form-control {
+            outline: none;
+            width: 100%;
+            font-size: 14px;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
+            color: grey;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+            height: 100%;
+            background: transparent;
+        }
+
+        .option-box {
+            width: 80%;
+            height: 50px;
+            box-shadow: 0px 0px 10px;
+            position: fixed;
+            bottom: 5px;
+            right: 85px;
+            z-index: 10;
+            background: white;
+            margin-left: -5px;
+            border-radius: 20px;
+            display: grid;
+            /* align-items: center; */
+            justify-items: center;
+        }
+
+        .divider {
+            border: 1px solid green;
+        }
+
+        .opt-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 0.01fr 1fr 1fr;
+            grid-gap: 1rem;
+            padding: 5px;
+        }
+
+        .opt-hidden-div {
+            height: 30px;
+            visibility: hidden;
+        }
+
+        .opt-btn {
+            background: #0d8c80;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .title-box {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            grid-gap: 1em;
+        }
+
+        .title-txt {
+            font-size: 20px;
+            font-style: bold;
+            color: brown;
+        }
+
+        .irf-part {
+            font-size: 20px;
+            color: green;
+        }
+
+        .dt-header-cell {
+            min-width: 5px !important;
+            font-size: 16px !important;
+            color: black !important;
+            font-weight: 500 !important;
+            text-align: center !important;
+        }
+
+        .dt-header {
+            height: 40px !important;
+
+        }
+
+        .data-table {
+            padding: 1px;
+        }
+
+        .delete-icon {
+            cursor: pointer;
+        }
+
+        .hidden-class {
+            /* width: 0px !important; */
+            /* height: 0px !important; */
+            margin-left: -500px;
+            /* visibility: hidden; */
+        }
+
+        .success-msg {
+            padding: 5px;
+            justify-items: center;
+            align-items: center;
+            display: grid;
+            position: fixed;
+            margin-left: 280px;
+            bottom: 64px;
+            /* border: 1px solid; */
+            height: 30px;
+        }
+
+        .success-msg-child {
+            padding: 5px;
+            box-shadow: 0px 0px 11px;
+            color: green;
+        }
+        .opt-delete{
+            background: white;
+            border: 2px dotted red;
+            color: black;
+        }
+    </style>
+</head>
+
+<body ng-app="translation">
+    <div class="title-box">
+        <div class="title-txt"><span class="irf-part">IRF</span> Translations</div>
+
+    </div>
+    <translations></translations>
+    <!-- <translations></translations> -->
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+
+  "name": "Irf Translations",
+  "description": "This extension add the selected translation to the list and creates a query for it.",
+  "version": "1.0",
+  "icons": {
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["app/content.js"]
+    }
+  ],
+
+  "permissions": [
+          "storage",
+          "notifications",
+          "contextMenus",
+          "tabs",
+          "clipboardWrite",
+          "clipboardRead",
+          "downloads"
+        ],
+
+  "options_page": "options.html"
+}
