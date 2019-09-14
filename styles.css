@@ -1,35 +1,92 @@
-.main-div{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:3rem;
-    /* justify-items: center; */
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.init-content{
+.head-div{
     display: grid;
     justify-items: center;
+    grid-template-rows: 35px;
 }
-.actual-content {
+.headBox{
+    background: #f6f5f4;
+    margin-bottom: -6px;
+    z-index: 1004;
+    margin-top: 1px;
+    width: 603px;
+    height: 50px;
     display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    grid-column-gap: 7px;
+    /* border: 1px solid; */
+    /* box-shadow: 0px 0px 17px -3px;*/
+}
+body{
+background: #ecebe8
+}
+.head-little-box{
+    background: #3a71bb;
+    padding: 7px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.body-div{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
     grid-gap:1em;
 }
-.actual-content > div{
-    box-shadow: 0px 0px 10px;
-    height: 100px;
-    width: 100%;
-}
-.step-box{
-    grid-template-columns: 1fr 0.5fr 5fr;
+.imageBox{
+    /* padding-left: 18px; */
+    /* border: 1px solid; */
+    height: 150px;
+    /* margin-top: -10px; */
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-gap:1rem;
+    width: 100%;
+    background: white;
 }
-.divider{
-    padding-top:2px;
-    border-radius: 50%;
-    border: 2px solid #bdbdbd;
-    height: 100%;
-    padding-bottom:2px;
+.box1{
+    padding: 0px;
+    display: grid;
+    grid-gap: 3px;
+    width: 600px;
+    justify-items: center;
+    align-items: center;
+
+}
+.box2{
+    padding: 0px;
+    display: grid;
+    grid-gap: 3px;
+    width: 600px;
+    justify-items: center;
+    align-items: center;
+}
+.box3{
+    padding: 0px;
+    display: grid;
+    grid-gap: 3px;
+    width: 600px;
+    justify-items: center;
+    align-items: center;
+}
+.download-btn{
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #3a71bb;
+    color: white;
+    cursor: pointer;
+}
+.contentBox{
+    /* padding-left: 18px; */
+    /* border: 1px solid; */
+    min-height: 100px;
+    /* margin-top: -10px; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    background: white;
 }
