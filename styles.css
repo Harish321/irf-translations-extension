@@ -8,7 +8,7 @@
     margin-bottom: -6px;
     z-index: 1004;
     margin-top: 1px;
-    width: 603px;
+    width: 800px;
     height: 50px;
     display: grid;
     grid-template-columns: 1fr 9fr;
@@ -35,9 +35,10 @@ background: #ecebe8
     grid-gap:1em;
 }
 .imageBox{
+    padding: -1px;
     /* padding-left: 18px; */
     /* border: 1px solid; */
-    height: 150px;
+    height: 620px;
     /* margin-top: -10px; */
     display: grid;
     align-items: center;
@@ -49,16 +50,15 @@ background: #ecebe8
     padding: 0px;
     display: grid;
     grid-gap: 3px;
-    width: 600px;
+    width: 800px;
     justify-items: center;
     align-items: center;
-
 }
 .box2{
     padding: 0px;
     display: grid;
     grid-gap: 3px;
-    width: 600px;
+    width: 800px;
     justify-items: center;
     align-items: center;
 }
@@ -66,7 +66,7 @@ background: #ecebe8
     padding: 0px;
     display: grid;
     grid-gap: 3px;
-    width: 600px;
+    width: 800px;
     justify-items: center;
     align-items: center;
 }
@@ -89,4 +89,8 @@ background: #ecebe8
     justify-items: center;
     width: 100%;
     background: white;
+}
+.gif-class{
+    height: 97%;
+    width: 98%;
 }
