@@ -94,3 +94,7 @@ background: #ecebe8
     height: 97%;
     width: 98%;
 }
+ol{
+    display: grid !important;
+    grid-gap:0.5rem !important;
+ }
