@@ -12,6 +12,7 @@ app.directive('translations', function () {
                 <button class='opt-btn' id='ctc' ng-click="ctcboard()">Copy to Clipboard</button>
                 <button class='opt-btn' id='dsf' ng-click="sqldownload()">Download SQL File</button>
                 <button class='opt-btn' id='bulkTrans' ng-click="bulkTrans()">Bulk Translation</button>
+                <button class='opt-btn' id='release' ng-click="releaseModal = releaseModal ? !releaseModal : true">Release</button>
                 <div class='divider'></div>
                 <button class='opt-btn opt-delete' id='da' ng-click="deleteAll()">Delete All</button>
                 <button class='opt-btn opt-delete' ng-click="deleteSession()">Delete Prev Session</button>
@@ -26,7 +27,9 @@ app.directive('translations', function () {
                 <button class='opt-btn'>Delete All</button>
                 </div>
                 </div>
-            </div>`,
+            </div>
+            <div ng-if='releaseModal' class="release-modal"></div>
+            `,
     controller: "translateController"
   }
 })
