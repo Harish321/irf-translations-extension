@@ -17,7 +17,7 @@ window.addEventListener('contextmenu', e => {
                     }
                 }
                 else{
-                    var direct = false;
+                    var direct = true;
                     if(!e.target.innerHTML)
                         code = e.target.value;
                     else 

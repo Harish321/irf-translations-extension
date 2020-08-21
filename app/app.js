@@ -92,7 +92,7 @@ app.controller('translateController', function ($scope, $q) {
           'value': data.translations[key].value ? data.translations[key].value : (((data.translations[key].code.split('_').map(x => x.split(' '))) + '').split(',').map(x => (x.charAt(0).toUpperCase() + x.slice(1).toLowerCase())) + '').replace(/,/g, ' '),
           'session': data.translations[key].session,
           'check': true,
-          'direct':data.translations[key].direct ? data.translations[key].direct : false,
+          'direct':true,
           'category': typeof data.translations[key].category != 'undefined' ? data.translations[key].category : '',
           'subCategory': typeof data.translations[key].subCategory != 'undefined' ? data.translations[key].subCategory : '',
         })
